@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Wrapper {
+    background: white;
+    height: auto;
+    width: auto;
+    padding: 0px 56px;
+}
+
+#Container {
+    margin: 0px;
+    display: inline-block;
+    padding-left: 470px;
+    background: #1a1a1a;
+}
+
+.Logo {
+    margin: 20px;
+    display: inline-block;
+}
+
+.Contact {
+    display: inline-block;
+    margin: 0px;
+    color: white;
+    vertical-align: top;
+    margin-left: 571px;
+    font-size: 13px;
+    margin-top: 28px;
+}
+
+#Container .SleepyingLady {
+    display: inline-block;
+}
+
+#Directory {
+    width: 976px;
+    height: auto;
+    display: inline-block;
+    background: #454545;
+    border-radius: 6px;
+}
+
+#Directory p {
+    display: inline-block;
+    border-right: 2px solid #3c3c3c;
+    margin-left: 11px;
+    color: white;
+    padding: 8px 12px;
+}
+
+#Directory .DirectoryContact {
+    padding-right: 330px;
+}
+
+.SleepingLady {
+    display: inline-block;
+    margin-top: 6px;
+    border-bottom: 5px solid #3b3b3b;
+}
+
+#MiddleSection {
+    background: #1a1a1a;
+    height: 150px;
+    width: 977px;
+    display: inline-block;
+}
+
+.Sections {
+    display: inline-block;
+    width: 238px;
+    margin-top: 20px;
+}
+
+.Sections img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Quotes {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 11px;
+    width: 167px;
+    text-align: left;
+    color: white;
+}
+
+.Quotes h4 {
+    color: #e8792a;
+}
+
+#AD {
+    background: repeating-linear-gradient(112deg, #141414 21px, #050505 27px);
+    height: 100px;
+    width: 976px;
+    display: inline-block;
+}
+
+#ADtext {
+    display: inline-block;
+    color: white;
+    margin: 15px 50px;
+}
+
+#ADtext p {
+    width: 632px;
+    color: white;
+    margin-top: 3px;
+}
+
+#AD button {
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 62px;
+    background: #f1944f;
+    padding: 9px 28px;
+    border-radius: 6px;
+    color: white;
+}
+
+#Footer {
+    background: #1a1a1a;
+    height: auto;
+    width: 976px;
+    display: inline-block;
+}
+
+#Footer h3 {
+    color: white;
+    display: inline-block;
+    margin: 10px 21px;
+}
+
+#Footer h6 {
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 895px;
+    color: gray;
+}
+
+.ViewAll {
+    color: #e8792a;
+    display: inline-block;
+    margin-left: 703px;
+    font-style: italic;
+}
+
+#PortfolioBottom {
+    margin: 16px 14px;
+    display: inline-block;
+}
+
+#PortfolioBottom img {
+    border: 2px solid gray;
+    margin-left: 16px;
+}
+
+.PortfolioText {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+}
+
+.PortfolioText h4 {
+    color: #e8792a;
+    margin: 3px 19px;
+}
+
+.PortfolioText p {
+    display: inline-block;
+    margin-left: 16px;
+    text-align: left;
+    color: white;
+    font-size: 13px;
+}

@@ -1,0 +1,64 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #Content {
+        margin: 0px 60px 0px 13px;
+        background: darkblue;
+        height: 720px;
+        width: 1015px;
+        padding: 4px;
+    }
+    
+    #header {
+        margin: 5px;
+        color: grey;
+        background-color: red;
+        padding: 19px;
+        border-radius: 10px;
+    }
+    
+    #listContent {
+        margin: 5px;
+        color: blue;
+        background-color: teal;
+        padding: 40px;
+        border-radius: 45px;
+        display: inline-block;
+    }
+    
+    .unList {
+        margin: -1px 15px;
+    }
+    
+    .test {
+        margin: 0px;
+    }
+    
+    .home {
+        margin: -16px;
+    }
+    
+    #JavascriptText {
+        background: black;
+        margin: 8px;
+        vertical-align: top;
+        display: inline-block;
+        color: white;
+        padding: 13px;
+        border-radius: 23px;
+        width: 70%;
+        height: 50%;
+        padding-bottom: 189px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    
+    .finish {
+        background: grey;
+        color: white;
+        border-radius: 14px;
+        padding: 10px;
+        margin: -2px;
+    }

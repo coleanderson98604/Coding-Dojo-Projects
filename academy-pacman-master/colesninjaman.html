@@ -1,0 +1,168 @@
+<html>
+<head>
+	<title>NinjaMan</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.row {
+			line-height: 0;
+		}
+		.wall {
+			background-color: red;
+			height: 40px;
+			width: 40px;
+			display: inline-block;
+		}
+		.sushi {
+			background-color: black;
+			height: 40px;
+			width: 40px;
+			display: inline-block;
+			background-image: url('sushi.png');
+			background-size: contain;
+		}
+		.onigiri{
+			background-color: black;
+			height: 40px;
+			width: 40px;
+			display: inline-block;
+			background-image: url('onigiri.png');
+			background-size: contain;
+		}
+		.blank {
+			background-color: black;
+			height: 40px;
+			width: 40px;
+			display: inline-block;
+		}
+		#ninjaman {
+			background-color: black;
+			height: 40px;
+			width: 40px;
+			display: inline-block;
+			background-image: url('ninja.gif');
+			background-size: contain;
+			position: absolute;
+			left: 80px;
+			top: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div id= 'world'></div>
+	<div id='ninjaman'></div>
+	<div id='score'></div>
+</body>
+<script type="text/javascript">
+	var world = [
+		[1,1,1,1,1,1],
+		[1,0,0,0,0,1],
+		[1,1,0,0,0,1],
+		[1,0,0,1,0,1],
+		[1,2,0,1,0,1],
+		[1,1,0,2,0,1],
+		[1,0,0,1,0,1],
+		[1,0,0,0,0,1],
+		[1,1,3,1,0,1],
+		[1,0,0,1,3,1],
+		[1,1,1,1,1,1],
+	];
+	var worldDict = {
+		0: 'blank',
+		1: 'wall',
+		2: 'sushi',
+		3: 'onigiri',
+	}
+
+	function drawWorld() {
+		output = "";
+
+		for(var row = 0; row < world.length; row++){
+			output += "<div class = 'row'>"
+			for(var x = 0; x < world[row].length; x++){
+				output += "<div class = '"+ worldDict[world[row][x]] +"'></div>"
+			}
+			output += "</div>"
+		}
+		document.getElementById('world').innerHTML = output;
+	}
+	drawWorld()
+
+	var ninjaman = {
+		x: 1,
+		y: 1
+	}
+	var score = 0;
+	var count = 0;
+
+	function drawNinjaman() {
+		document.getElementById('ninjaman').style.top = ninjaman.y * 40 + 'px'
+		document.getElementById('ninjaman').style.left = ninjaman.x * 40 + 'px'
+
+	}
+	drawNinjaman()
+
+
+
+	function scoreNinja(){
+
+		for(var idx = 0; idx < world.length; idx++){
+			for(var idx1 = 0; idx1 < world.length; idx1++){
+				if(world[idx][idx1] == 2){
+				score += 5;
+
+				}
+				else if(world[idx][idx1] == 3){
+				score += 1;
+				}
+			}
+		}
+		console.log(score,count);
+	}
+
+	document.onkeydown = function(e){
+		if(e.keyCode == 37){ //left
+			if(world[ninjaman.y][ninjaman.x - 1] != 1){
+			ninjaman.x--;
+			}
+			count++;
+		}
+		if(e.keyCode == 39){ //right
+			if(world[ninjaman.y][ninjaman.x + 1] != 1){
+			ninjaman.x++;
+			}
+			count++;
+		}
+		if(e.keyCode == 38){ //down
+			if(world[ninjaman.y - 1][ninjaman.x] != 1){
+			ninjaman.y--;
+			}
+			count++;
+		}
+		if(e.keyCode == 40){ //up
+			if(world[ninjaman.y + 1][ninjaman.x] != 1){
+			ninjaman.y++;
+			}
+			count++;
+		}
+		world[ninjaman.y][ninjaman.x] = 0;
+
+		scoreNinja()
+		drawNinjaman()
+		drawWorld()
+	}
+
+
+
+	// score of how many sushi's and onigiri's ninjaman eats
+
+	// advanced challenge - random world
+
+	// advanced challenge - ghost chasing ninjaman 
+
+
+
+</script>
+</html>

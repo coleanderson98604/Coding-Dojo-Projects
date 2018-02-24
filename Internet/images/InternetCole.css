@@ -1,0 +1,291 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Wrapper {
+    background: #f6f6f6;
+    width: 970px;
+    height: 876px;
+}
+
+#Internet {
+    background-image: url(globe.png);
+    background-size: 24%;
+    width: 480px;
+    height: 113px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 4px;
+    position: absolute;
+}
+
+#Internet h1 {
+    display: inline-block;
+    padding-left: 115px;
+    margin-top: 61px;
+    color: #474747;
+}
+
+#WWW {
+    background: linear-gradient(#2c69a1, #4c80ab);
+    width: 941px;
+    height: 45px;
+    padding-left: 29px;
+    margin-top: 92px;
+    padding-top: 20px;
+    color: white;
+    display: inline-block;
+}
+
+#Body {
+    background: #f6f6f6;
+    height: 500px;
+    width: auto;
+}
+
+#LinkAndAd {
+    background: #f6f6f6;
+    width: 178px;
+    height: 400px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#IntNet {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+#VideoLink {
+    width: auto;
+    height: 35px;
+    display: inline-block;
+    background: #407caf;
+    padding: 0px 11px;
+    margin-top: 6px;
+    border-radius: 16px;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 6px;
+}
+
+#ResourceLink {
+    width: auto;
+    height: 43px;
+    display: inline-block;
+    background: #ee8600;
+    border-radius: 9px;
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+#Ad {
+    background-image: url(ad_background.png);
+    background-size: 100%;
+    width: 100%;
+    margin: 0px;
+    height: 260px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+#Link {
+    border-bottom: 2px solid gray;
+}
+
+#Link span {
+    color: red;
+}
+
+#Link .IntNet {
+    color: #2567a0;
+}
+
+#AdNinja {
+    background-image: url(ninja.png);
+    background-size: 100%;
+    width: 41%;
+    margin: 0px;
+    height: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 46px;
+}
+
+#Ad p {
+    font-size: 23px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#AdLearnMore {
+    background: #54c9df;
+    width: 135px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 18px;
+    border-radius: 8px;
+    margin-top: 9px;
+}
+
+#AdLearnMore p {
+    font-size: 17px;
+    margin-top: 6px;
+    color: white;
+    margin-left: 26px;
+}
+
+#BodyText {
+    background: #f6f6f6;
+    height: 75px;
+    width: 764px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 24px;
+    border-bottom: 2px solid gray;
+}
+
+#HomeDNS {
+    background-image: url(home.png);
+    height: 75px;
+    width: 30%;
+    background-size: 11%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    vertical-align: top;
+    margin-left: 7px;
+}
+
+#HomeDNS p {
+    color: #3b76a8;
+    margin-left: 31px;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+#Phone {
+    background-image: url(phone.png);
+    width: 7%;
+    height: 56px;
+    background-size: 102%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 266px;
+    margin-top: 8px;
+}
+
+#ContactInfo {
+    width: 200px;
+    height: auto;
+    background: #f6f6f6;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#ContactInfo p {
+    font-size: 10px;
+    margin-left: 47px;
+}
+
+#ContactInfo h2 {
+    font-size: 30px;
+    color: #48c4df;
+    margin-left: 26px;
+}
+
+#BodyTextInfo {
+    background: #f6f6f6;
+    height: auto;
+    width: 763px;
+    display: inline-block;
+}
+
+#BodyTextInfo h2 {
+    margin-bottom: 5px;
+    color: #2c6ba2;
+}
+
+#BodyTextInfo .Bold {
+    font-weight: bold;
+    color: black;
+}
+
+#BodyTextInfo ul li {
+    margin-left: 43px;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+#BodyTextInfo ol li {
+    margin-left: 43px;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+#ServerClient {
+    background-image: url(client_server.jpg);
+    background-size: 56%;
+    width: 56%;
+    height: 95px;
+    margin-left: 212px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+}
+
+#Footer {
+    background: #f6f6f6;
+    height: auto;
+    width: auto;
+    border-top: 2px solid#3885e0;
+    border-left: 2px solid #3885e0;
+    border-right: 2px solid #3885e0;
+}
+
+#FooterText {
+    display: inline-block;
+    width: 67%;
+}
+
+#FooterImage {
+    background-image: url(html.png);
+    background-size: 85%;
+    width: 16%;
+    background-repeat: no-repeat;
+    height: 98px;
+    display: inline-block;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+#Footer .Italic {
+    font-style: italic;
+}
+
+#FooterText p {
+    margin-top: 11px;
+}
+
+#FooterText h2 {
+    color: #3475a9
+}
+
+h3 {
+    color: white;
+    margin-top: 9px;
+}
+
+h4 {
+    display: inline-block;
+    margin-top: 24px;
+}
+
+span {
+    color: #44abbe;
+}

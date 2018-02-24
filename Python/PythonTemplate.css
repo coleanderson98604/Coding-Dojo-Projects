@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Wrapper {
+    margin: 0px;
+    width: 970px;
+    height: auto;
+    background: #245076;
+}
+
+#Header {
+    margin: 0px;
+    width: 970px;
+    height: auto;
+    background: #245076;
+}
+
+#PythonImage {
+    margin: -1px;
+    width: 43%;
+    height: 100px;
+    background-size: 78%;
+    background-image: url(python.png);
+    margin-left: 19px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+}
+
+#SearchAndText {
+    margin: 0px;
+    width: 200px;
+    height: auto;
+    background: #245076;
+    display: inline-block;
+    margin-left: 320px;
+    margin-top: 8px;
+}
+
+#Text {
+    margin: 0px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+#Search {
+    margin: 0px;
+    margin: 0px;
+    padding: 12px 19px;
+    background: #444444;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    margin-top: 2px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+#LinksAndInfo {
+    margin: 0px;
+    padding: 0px;
+    background: #245076;
+    height: 307px;
+    width: auto;
+}
+
+#WebsiteDirectory {
+    margin: 0px;
+    padding: 0px;
+    background: #3d79ad;
+    height: auto;
+    width: auto;
+    display: inline-flex;
+    margin-left: 195px;
+    padding-left: 12px;
+    padding-right: 29px;
+    border-radius: 5px;
+    color: white;
+}
+
+#Links {
+    margin: 0px;
+    padding: 24px;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    background: #245076;
+    margin-left: 200px;
+    text-align: center;
+}
+
+#Info {
+    margin: 0px;
+    padding: 3px;
+    background: #245076;
+    height: 200px;
+    width: 322px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 105px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 7px;
+    color: white;
+}
+
+#TextBody {
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;
+    height: auto;
+    width: auto;
+}
+
+#TextLeft {
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;
+    height: auto;
+    width: 338px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 167px;
+    border-top: 5px solid#72a7d5;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#TextRight {
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 84px;
+    border-top: 5px solid #72a7d5;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#Footer {
+    margin: 0px;
+    padding: 0px;
+    background: #285983;
+    height: 102px;
+    width: auto;
+}
+
+.Copyright {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    color: white;
+    margin-left: 425px;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.FooterText {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-top: 44px;
+    padding-left: 2px;
+    margin-left: 128px;
+    color: white;
+}
+
+.Italic {
+    color: yellow;
+    font-style: italic;
+}
+
+ul li {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3px;
+    color: yellow;
+    margin-left: 21px;
+}
+
+.list {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3px;
+    color: black;
+    margin-left: 21px;
+}
+
+.TextSize a {
+    color: yellow;
+}
+
+.list a {
+    text-decoration: none;
+    color: blue;
+}
+
+.PythonLink {
+    text-decoration: none;
+}
+
+p {
+    margin: 0px;
+    padding: 2px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    padding-left: 18px;
+}
+
+button {
+    background-color: #245076;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+a {
+    color: white;
+}

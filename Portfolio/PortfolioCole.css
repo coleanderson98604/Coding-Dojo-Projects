@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Wrapper {
+    background: radial-gradient(gray, purple);
+    height: auto;
+    width: auto;
+}
+
+#header {
+    height: auto;
+    width: auto;
+    background: white;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+#name {
+    background: white;
+    height: auto;
+    width: auto;
+    color: black;
+    display: inline-block;
+}
+
+#quote {
+    background: white;
+    height: auto;
+    width: auto;
+    color: black;
+    display: inline-block;
+    float: right;
+}
+
+#Profile {
+    height: auto;
+    width: auto;
+}
+
+#picture {
+    background-image: url(photo_of_me.jpg);
+    background-size: 101%;
+    height: 240px;
+    width: 36%;
+    display: inline-block;
+    margin-left: 35px;
+    border: 3px solid gray;
+}
+
+#about {
+    background: rgba(155, 126, 150, 0.658);
+    height: 247px;
+    width: 500px;
+    display: inline-block;
+    margin-left: 43px;
+    vertical-align: top;
+}
+
+#aboutheader {
+    margin: 0px;
+    background: black;
+    color: white;
+}
+
+#projects {
+    background: rgba(155, 126, 150, 0.658);
+    height: auto;
+    width: 283px;
+    display: inline-block;
+    margin: 0px;
+    margin-top: 100px;
+    margin-left: 35px;
+    vertical-align: top;
+}
+
+#projects1 {
+    background: rgba(155, 126, 150, 0.658);
+    height: auto;
+    width: 283px;
+    display: inline-block;
+    margin: 0px;
+    margin-top: 100px;
+    margin-left: 35px;
+    vertical-align: top;
+}
+
+#projects2 {
+    background: rgba(155, 126, 150, 0.658);
+    height: auto;
+    width: 283px;
+    display: inline-block;
+    margin: 0px;
+    margin-top: 100px;
+    margin-left: 35px;
+    vertical-align: top;
+}
+
+#footer {
+    background: white;
+    height: 100px;
+    margin-top: 22px;
+}
+
+h3 {
+    background: linear-gradient(lightgray, darkgray);
+    margin: 0px;
+    color: black;
+}
+
+.tech {
+    margin-top: 200px;
+}
+
+.tech1 {
+    margin-top: 183px;
+}
+
+.tech2 {
+    margin-top: 147px;
+}
+
+button {
+    background-color: #407d60;
+    border: none;
+    color: white;
+    padding: 9px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-left: 86px;
+    border-radius: 18px;
+    margin-bottom: 19px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.links {
+    margin-left: 369px;
+    display: inline-flex;
+}
+
+p {
+    margin: 0px;
+    display: initial;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="Stylesheet" href="hoverinhoverout.css">
+    <title>hoverinhoverout</title>
+    <script>
+        var temp = 'Puggo.png';
+        var Default = 'OldPuggo.png';
+        $(document).ready(function() {
+            $('img').hover(function() {
+                $(this).attr('src', Default);
+            }, function() {
+                $(this).attr('src', temp);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Puggo future view</h1>
+    <div>
+        <img src="Puggo.png" alt="young puggo" data-alt-src="OldPuggo.png">
+        <img src="Puggo.png" alt="young puggo" data-alt-src="OldPuggo.png">
+    </div>
+    <div>
+        <img src="Puggo.png" alt="young puggo" data-alt-src="OldPuggo.png">
+        <img src="Puggo.png" alt="young puggo" data-alt-src="OldPuggo.png">
+    </div>
+
+</body>
+
+</html>

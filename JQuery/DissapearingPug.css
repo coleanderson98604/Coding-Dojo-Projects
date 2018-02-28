@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    background: green;
+    border-radius: 10px;
+    padding: 10px;
+    vertical-align: bottom;
+}

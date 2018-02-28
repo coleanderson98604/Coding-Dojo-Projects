@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>JQuery</title>
+    <style>
+        h3 {
+            display: none;
+        }
+        
+        .Color {
+            color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.vanish').click(function() {
+                    //$('.vanish').hide();
+                    $('#Text').hide();
+                    $('#Numbers').hide();
+                })
+                // $('.Reveal').click(function() {
+                //     $('button').show();
+                // })
+            $('#Text h1').hover(function() {
+                $('#Text h1').toggle(200);
+            })
+            $('.Reveal').click(function() {
+                $('#Text h2').slideDown("slow");
+                $('#Numbers h1').slideUp("slow");
+                $('#Numbers h2').slideToggle("slow");
+                $('#Numbers h3').fadeIn("slow");
+            })
+            $('.Reset').click(function() {
+                $('#Text').show();
+                $('#Numbers').show();
+                $('#Numbers h3').fadeOut();
+                $('#Text h2').slideUp("slow");
+                $('input').val("somethingElse");
+            })
+            $('.Addclass').click(function() {
+                console.log("i've been clicked");
+                $('#Text').addClass("Color");
+                $('#Numbers').addClass('Color');
+            })
+            $('.Before').click(function() {
+                $('#Text').before("woooops");
+            })
+            $('.After').click(function() {
+                $('#Text').after("<i>after</i>");
+            })
+            $('.append').click(function() {
+                $('#Numbers').append('<h1>yolo</h1>');
+            })
+            $('.Replace').click(function() {
+                $('#Numbers').html("<h1>Numbers no more!</h1>");
+            })
+            $('img').hover(function() {
+                $('img').attr({
+                    width: "684",
+                    height: "400"
+                })
+            })
+            var str = $('h1').text();
+            $('.PutText').click(function() {
+                $('#Text').html(str);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <button class="vanish">Click Me plz</button>
+    </div>
+    <div>
+        <button class="Reveal">Reveal the button!</button>
+    </div>
+    <div>
+        <button class="Reset">Reset</button>
+        <button class="Addclass">Add class</button>
+        <button class="Before">Before placement</button>
+        <button class="After">After placement</button>
+        <button class="append">append</button>
+        <button class="Replace">Replace</button>
+        <input type="text" value="something">
+        <button class="PutText">Place text</button>
+        <button class="Data">Data replacement</button>
+    </div>
+    <div id="Text">
+        <h1>Hover Watch me vanish</h1>
+        <h2>Watch me slide down</h2>
+    </div>
+    <div id="Numbers">
+        <h1>Slide up</h1>
+        <h2>Slide Toggle</h2>
+        <h3>FadeIn</h3>
+        <img src="Puggles.jpeg" alt="pugs" width="100" height="100">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Header {
+    border: 2px solid black;
+    display: inline-block;
+}
+
+th {
+    display: inline-block;
+    margin-right: 61px;
+}
+
+input {
+    display: block;
+}
+
+h1 {
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-right: 100px;
+    margin-top: 20px;
+}

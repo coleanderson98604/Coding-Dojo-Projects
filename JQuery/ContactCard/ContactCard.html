@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ContactCard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="Stylesheet" href="ContactCard.css">
+</head>
+<script>
+    $(document).ready(function() {
+        $(document).on('click', 'button', function() {
+            var x = $('.firstName').val();
+            var y = $('.secondName').val();
+            var z = $('textarea').val();
+            var $newdiv1 = $(`<div class='InfoCard' data-alt-src='${z}'><h1>${x}</h1><h1>${y}</h1><p>click here for description</p></div>`);
+            $('#output').append($newdiv1);
+            // $('.InfoCard p').attr('data-alt-src', z);
+            return false
+        })
+        $(document).on('click', '.InfoCard', function() {
+                var Descrip = $(this).data('alt-src');
+                // console.log(Descrip);
+                $(this).html(Descrip);
+            })
+            // $(document).on('mouseleave', '#InfoCard', function() {
+            //     var x = $('.firstName').val();
+            //     var y = $('.secondName').val();
+            //     $(this).html('<h1>' + x + '</h1>' + '<h1>' + y + '</h1>' + '<p>click here for description</p>');
+            //     return false
+            // })
+    })
+</script>
+
+<body>
+    <form>
+        <table>
+            <tr class="FandL">
+                <td>First Name:</td>
+                <td><input class="firstName" type="text" name="FirstName" value=""></td>
+            </tr>
+            <tr class="FandL">
+                <td>Last Name:</td>
+                <td><input class="secondName" type="text" name="LastName" value=""></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+            </tr>
+            <tr>
+                <td><textarea rows="10" cols="50" type="text" name="Description" value="Enter description"></textarea></td>
+            </tr>
+            <tr>
+                <td><button>Add User</button></td>
+            </tr>
+        </table>
+    </form>
+    <div id="output">
+
+    </div>
+</body>
+
+</html>

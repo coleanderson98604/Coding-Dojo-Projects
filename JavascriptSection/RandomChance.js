@@ -14,4 +14,4 @@ function RandomChance(quarters) {
         return 0;
     }
 }
-//RandomChance(200)
+RandomChance(200)

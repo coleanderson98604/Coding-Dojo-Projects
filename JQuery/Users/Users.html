@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="Stylesheet" href="Users.css">
+    <script>
+        $(document).ready(function() {
+            var count = 0;
+            $(document).on('click', 'button', function() {
+                if (count === 0) {
+                    count++;
+                    var x = $('.FirstName').val();
+                    // console.log(x);
+                    $('.info').append('<th>' + x + '</th>');
+                    var y = $('.LastName').val();
+                    $('.info').append('<th>' + y + '</th>');
+                    var z = $('.Email').val();
+                    $('.info').append('<th>' + z + '</th>');
+                    var a = $('.PhoneNumber').val();
+                    $('.info').append('<th>' + a + '</th>');
+                    return false
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="Header">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Contact No.</th>
+            </tr>
+            <tr class="info">
+            </tr>
+        </table>
+    </div>
+    <div id="AddUser">
+        <h1>Add User</h1>
+        <form>
+            <p>First Name:</p><input class="FirstName" type="text" name="First_name" value="First Name">
+            <p>Last Name:</p><input class="LastName" type="text" name="Last_name" value="Last Name">
+            <p>Email Address:</p><input class="Email" type="text" name="email" value="Email Address">
+            <p>Contact No.:</p><input class="PhoneNumber" type="text" name="Phone#" value="Phone #">
+            <button>Add User</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: gray;
+    width: 800px;
+    height: auto;
+}
+
+#PokeDex {
+    margin: 0px;
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    background: whitesmoke;
+    vertical-align: top;
+    position: fixed;
+    margin-left: 85px;
+}
+
+#Container {
+    margin: 0px;
+    display: inline-block;
+    width: 600px;
+}
+
+#PokeInfo p {
+    margin: 5px 6px 11px 0px;
+    font-weight: bold;
+}
+
+#PokeInfo {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 154px;
+    font-weight: 300;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    margin-top: 22px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 35px;
+    background: darkgray;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="Stylesheet" href="GameOfThrones.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <title>GameOfThrones</title>
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', 'img', function() {
+                var Identity = $(this).data('alt-src');
+                var urlB = `https://www.anapioficeandfire.com/api/houses?page=2`;
+                var urlL = `https://www.anapioficeandfire.com/api/houses?page=23`;
+                var urlS = `https://www.anapioficeandfire.com/api/houses?page=37`;
+                var urlT = `https://www.anapioficeandfire.com/api/houses?page=38`;
+                if (Identity === 'baratheon') {
+                    $.get(urlB, function(res) {
+                        console.log(res[6]);
+                        console.log(res);
+                        var Name = res[6].name;
+                        var Words = res[6].words;
+                        var Titles = res[6].titles
+                        $('#HouseDetails').html(
+                            `<h3>Name: ${Name}</h3>
+                            <h3>Words: "${Words}"</h3>
+                            <h3>Titles: ${Titles}</h3>`
+                        )
+                    })
+                } else if (Identity === 'lannister') {
+                    $.get(urlL, function(res) {
+                        console.log(res);
+                        var Name = res[8].name;
+                        var Words = res[8].words;
+                        var Titles = res[8].titles
+                        $('#HouseDetails').html(
+                            `<h3>Name: ${Name}</h3>
+                            <h3>Words: "${Words}"</h3>
+                            <h3>Titles: ${Titles}</h3>`
+                        )
+                    })
+                } else if (Identity === 'stark') {
+                    $.get(urlS, function(res) {
+                        console.log(res);
+                        var Name = res[1].name;
+                        var Words = res[1].words;
+                        var Titles = res[1].titles
+                        $('#HouseDetails').html(
+                            `<h3>Name: ${Name}</h3>
+                            <h3>Words: "${Words}"</h3>
+                            <h3>Titles: ${Titles}</h3>`
+                        )
+                    })
+                } else if (Identity === 'targaryen') {
+                    $.get(urlT, function(res) {
+                        console.log(res);
+                        var Name = res[7].name;
+                        var Words = res[7].words;
+                        var Titles = res[7].titles
+                        $('#HouseDetails').html(
+                            `<h3>Name: ${Name}</h3>
+                            <h3>Words: "${Words}"</h3>
+                            <h3>Titles: ${Titles}</h3>`
+                        )
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <img src="baratheon.png" alt="Baratheon" data-alt-src="baratheon" height="300" width="300">
+    <img src="lannister.jpg" alt="Lannister" data-alt-src="lannister" height="300" width="300">
+    <img src="stark.jpg" alt="Stark" data-alt-src="stark" height="300" width="300">
+    <img src="targaryen.jpg" alt="targaryen" data-alt-src="targaryen" height="300" width="300">
+    <h3>House Details</h3>
+    <div id="HouseDetails">
+
+    </div>
+</body>
+
+</html>

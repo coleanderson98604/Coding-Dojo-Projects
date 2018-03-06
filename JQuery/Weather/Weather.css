@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p,
+h2 {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+h1 {
+    margin: 40px;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 12px;
+}

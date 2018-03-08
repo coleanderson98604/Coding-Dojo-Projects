@@ -1,4 +1,4 @@
-turtle = 0
+import turtle
 DIST = 100
 for x in range(0,6):
     print "x", x

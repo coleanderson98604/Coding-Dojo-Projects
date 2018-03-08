@@ -1,13 +1,5 @@
-i = 0
-sqr = 0
-for num in range(2,25):
-    sqr = num // 2
-    y = set([sqr])
-    while sqr * sqr != num:
-        sqr = (sqr + (num // sqr)) // 2
-        if sqr in y: break
-        y.add(sqr)
-        
+for i in range(100:100000):
+    j = 10
+    isPrime = True
+    isSquare = False
     
-        
-

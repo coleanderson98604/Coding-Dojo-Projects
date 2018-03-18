@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Stylesheet" href="{% static '../../static/dojo.css' %}">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <div id="container ">
+        <form id="info " action="/success " methods="post ">
+            {% csrf_token %}
+            <h1>Dojo Survey</h1>
+            <div id="top ">
+                <label for='name'>Your Name:</label>
+                <input type="text " name='name'>
+            </div>
+            <div id="second ">
+                <label for='location'>Dojo Location:</label>
+                <select name="location " id="loco ">
+                <option value='chicago'>Chicago</option>
+                <option value='seattle'>Seattle</option>
+                <option value='sanjose'>San Jose</option>
+                <option value='newyork'>New York</option>
+                </select>
+            </div>
+            <div id="third ">
+                <label for="language ">Favorite Language:</label>
+                <select name="language " id="language ">
+                    <opiton value='python'>Python</opiton>
+                    <option value="javascript ">JavaScript</option>
+                    <opiton value='mean'>Mean</opiton>
+                    <option value='ruby'>Ruby</option>
+                </select>
+            </div>
+            <div id='fourth'>
+                <hz>Comment (optional):</hz>
+                <textarea name="comment " id="comment " cols="30 " rows="10 "></textarea>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

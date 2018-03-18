@@ -31,4 +31,4 @@ class Dragon(Animal):
         print health
         return self
 Doggo = Dog('Peter',150)
-Doggo.pet(2).health2()
+Doggo.pet(2).walk(2).health2()

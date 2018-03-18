@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login and Registration</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <div>
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <h1>{{ message }}</h1>
+        {% endfor %}
+    </div>
+    {% endif %} {% endwith %}
+    <form action='/create' method="POST">
+        <label for="First_Name">First Name:</label>
+        <input type="text" name="First_Name">
+        <label for="Last_Name">Last Name:</label>
+        <input type="text" name="Last_Name">
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+        <input type="submit" value="Submit">
+    </form>
+    <h1>Login</h1>
+    <form action="/validate" method="POST">
+        <label for='emailLogin'>Email</label>
+        <input type="text" name="emailLogin">
+        <label for="PasswordLogin">Password</label>
+        <input type="password" name="PasswordLogin">
+        <input type="submit" name="submit" value="Log in">
+    </form>
+    <div>
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <h1>{{ message }}</h1>
+        {% endfor %}
+    </div>
+    {% endif %} {% endwith %}
+</body>
+
+</html>

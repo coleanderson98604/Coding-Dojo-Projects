@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <form action="/verify" method="POST">
+        <p>Email:</p> <input type="text" name="email" value="">
+        <p>First Name:</p> <input type="text" name="FName" value="">
+        <p>Last NAme:</p> <input type="text" name="LName" value="">
+        <p>Password:</p> <input type="password" name="PW" value="">
+        <p>Confirm Password:</p> <input type="password" name="PWC" value="">
+        <input type="submit" name="Submit" value="Submit!">
+    </form>
+    {% with EmailError = get_flashed_messages(category_filter=['EmailError'])%} {% if EmailError %}
+    <div class="Email-Error">
+        <ul>
+            {% for msg in EmailError %}
+            <li>{{ msg }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %} {% endwith %} {% with LengthError = get_flashed_messages(category_filter=['LengthError'])%} {% if LengthError %}
+    <div class="Length-Error">
+        <ul>
+            {% for msg1 in LengthError %}
+            <li>{{ msg1 }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %} {% endwith %} {% with CheckError = get_flashed_messages(category_filter=['CheckError'])%} {% if CheckError %}
+    <div class="Check-Error">
+        <ul>
+            {% for msg2 in CheckError %}
+            <li>{{ msg2 }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %} {% endwith %} {% with Success = get_flashed_messages(category_filter=['Success'])%} {% if Success %}
+    <div class="Email-Error">
+        <ul>
+            {% for msg3 in Success %}
+            <li>{{ msg3 }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %} {% endwith %} {% with TypeError = get_flashed_messages(category_filter=['TypeError'])%} {% if TypeError %}
+    <div class="Email-Error">
+        <ul>
+            {% for msg4 in TypeError %}
+            <li>{{ msg4 }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %} {% endwith %}
+</body>
+
+</html>

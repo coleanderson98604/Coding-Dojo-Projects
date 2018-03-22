@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-
+from ..LogReg.models import *
 # Create your models here.
 class CourseManager(models.Manager):
     def basic_validator(self, postData):
@@ -16,4 +16,7 @@ class Course(models.Model):
     name = models.CharField(max_length=255)
     Description = models.TextField()
     created_at = models.DateTimeField(auto_now_add = True)
+    user = models.ForeignKey(User, related_name = "courses")
+    joined = models.ManyToManyField(User, related_name ="joined_courses")
+
     objects = CourseManager()

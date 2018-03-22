@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses</title>
+</head>
+<body>
+    <h1>Welcome {{User.first_name}} {{User.last_name}}</h1>
+    <a href="user/logout">Logout</a>
+    <h2>Add a new course</h2>
+    <form action="/user/create" method="POST">
+        {%csrf_token%}
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <lable for="Description">Description</lable>
+        <input type="text" name="Description">
+        <input type="submit" value="Add">
+    </form>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Description</th>
+            <th>Date Added</th>
+            <th>Created By</th>
+            <th>Actions</th>
+            <th>Roster</th>
+        </tr>
+        {% for course in Courses%}
+        <tr>
+            <th><a href="user/{{course.id}}/show">{{course.name}}</a></th>
+            <th>{{course.Description}}</th>
+            <th>{{course.created_at}}</th>
+            <th>{{course.user.first_name}} {{course.user.last_name}}</th>
+            <th>
+                <a href="user/{{course.id}}/remove">remove</a>
+                <a href="user/{{course.id}}/join">join course</a>
+            </th>
+            <th></th>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2>Courses you've joined</h2>
+    {%for course in User.joined_courses.all %}
+    <p>Course Name: {{course.name}}</p>
+    <p>Course Description: {{course.Description}}</p>
+    <a href="user/{{course.id}}/leave">leave course</a>
+    {% endfor %}
+
+
+</body>
+</html>

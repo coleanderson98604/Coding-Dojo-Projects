@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show</title>
+</head>
+<body>
+    <h2>{{User.first_name}} {{User.last_name}} Profile</h2>
+    <p>Full Name: {{User.first_name}} {{User.last_name}}</p>
+    <p>Email: {{User.Email}}</p>
+    <p>Created at: {{User.created_at}}</p>
+    <a href="{%url 'my_edit' id=User.id%}">edit</a>
+    <a href="{%url 'my_delete' id=User.id%}">delete</a>
+</body>
+</html>

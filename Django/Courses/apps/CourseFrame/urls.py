@@ -8,6 +8,8 @@ urlpatterns = [
     url(r'^/logout', views.logout),
     url(r'^/(?P<id>\d+)/show', views.show),
     url(r'^/(?P<id>\d+)/remove$', views.remove),
-    url(r'^/(?P<id>\d+)/join', views.courses_joined),
-    url(r'^/(?P<id>\d+)/leave', views.remove_joined)
+    url(r'^/(?P<id>\d+)/join$', views.courses_joined),
+    url(r'^/(?P<id>\d+)/leave$', views.remove_joined),
+    url(r'^/(?P<id>\d+)/edit$', views.edit),
+    url(r'^/(?P<id>\d+)/update$', views.update)
 ]

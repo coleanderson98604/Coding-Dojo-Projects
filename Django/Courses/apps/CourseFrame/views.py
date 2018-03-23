@@ -24,6 +24,23 @@ def create(request):
         user = users[0]
     )
     return redirect('/user')
+def edit(request,id):
+    users = User.objects.filter(id = request.session['id'])
+    courses = Course.objects.get(id=id)
+    if users[0].id == courses.user.id:
+        context = {
+            "Course": courses
+        }
+        return render(request,"CourseFrame/edit.html",context)
+    else:
+        messages.error(request,"Can't edit a course you didn't make")
+        return redirect('/user')
+def update(request,id):
+    courses = Course.objects.get(id=id)
+    courses.name = request.POST['name']
+    courses.Description = request.POST['description']
+    courses.save()
+    return redirect('/user')
 def logout(request):
     request.session.flush()
     return redirect('/')

@@ -30,8 +30,9 @@ class LoginManager(models.Manager):
                 errors["EmailMatch"] = "Email already exists"
         if not postData['birthdate']:
             errors['BirthdateField'] = "Birthdate field cannot be empty"
-        if datetime.datetime.strptime(postData['birthdate'], '%Y-%m-%d') > datetime.datetime.now() - datetime.timedelta(days=365*18):
-            errors['ValidDate'] = "Birthdate must be atleast 18 years ago"
+        if postData['birthdate']:
+            if datetime.datetime.strptime(postData['birthdate'], '%Y-%m-%d') > datetime.datetime.now() - datetime.timedelta(days=365*18):
+                errors['ValidDate'] = "Birthdate must be atleast 18 years ago"
         return errors
     def login_validator(self,postData):
         errors = {}

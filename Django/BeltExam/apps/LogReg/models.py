@@ -5,29 +5,31 @@ from django.db import models
 import re
 import bcrypt
 import datetime
-EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
+# EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 # Create your views here.
 
 class LoginManager(models.Manager):
     def base_validator(self,postData):
         errors = {}
-        if len(postData['first_name']) < 3:
-            errors["first_name"] = "First name should be atleast 2 characters"
-        if len(postData['last_name']) < 3:
-            errors["last_name"] = "Last name should be atleast 2 characters"
-        if not re.match('^[a-z]*$',postData['first_name']):
-            errors["characters"] = "Must contain only letters"
-        if not re.match('^[a-z]*$',postData['last_name']):
-            errors["characters"] = "Must contain only letters"
-        if not EMAIL_REGEX.match(postData['email']):
-            errors["email"] = "Must be a valid email"
+        if len(postData['name']) < 3:
+            errors["name"] = "name should be atleast 2 characters"
+        if len(postData['username']) < 3:
+            errors["username"] = "username should be atleast 2 characters"
+        # if len(postData['last_name']) < 3:
+        #     errors["last_name"] = "Last name should be atleast 2 characters"
+        if not re.match('^[a-z]*$',postData['name']):
+            errors["characters"] = "Name must contain only letters"
+        if not re.match('^[a-z]*$',postData['username']):
+            errors["characters"] = "Username must contain only letters"
+        # if not EMAIL_REGEX.match(postData['email']):
+        #     errors["email"] = "Must be a valid email"
         if postData['password'] < 8:
             errors["PasswordLength"] = "Must be longer than 8 characters"
         if postData['password'] != postData['Cpassword']:
             errors["PasswordMatch"] = "Passwords don't match"
-        for emails in User.objects.all():
-            if postData['email'] == emails.email:
-                errors["EmailMatch"] = "Email already exists"
+        for usernames in User.objects.all():
+            if postData['username'] == usernames.username:
+                errors["UsernameMatch"] = "Username already exists"
         if not postData['birthdate']:
             errors['BirthdateField'] = "Birthdate field cannot be empty"
         if postData['birthdate']:
@@ -36,10 +38,10 @@ class LoginManager(models.Manager):
         return errors
     def login_validator(self,postData):
         errors = {}
-        emails = postData['Email']
+        username = postData['Username']
         passwords = postData['Password']
-        user = User.objects.filter(email = emails)
-        cpasword = bcrypt.checkpw(passwords.encode(),user[0].password.encode())
+        user = User.objects.get(username = username)
+        cpasword = bcrypt.checkpw(passwords.encode(),user.password.encode())
         if cpasword:
             return errors
         else:
@@ -47,9 +49,9 @@ class LoginManager(models.Manager):
             return errors
 
 class User(models.Model):
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
-    email = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+    username = models.CharField(max_length=255)
+    # email = models.CharField(max_length=255)
     birthday = models.DateField()
     password = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)

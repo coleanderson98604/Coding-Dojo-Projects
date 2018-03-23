@@ -18,10 +18,9 @@ def register(request):
     else:
         hash1 = bcrypt.hashpw(request.POST['password'].encode(), bcrypt.gensalt())
         new_user = User.objects.create(
-            first_name = request.POST['first_name'],
-            last_name = request.POST['last_name'],
+            name = request.POST['name'],
+            username = request.POST['username'],
             password = hash1,
-            email = request.POST['email'],
             birthday = request.POST['birthdate']
         )
         context = {
@@ -32,16 +31,17 @@ def register(request):
         print request.session['id']
         return redirect("/user")
 def show(request):
-    errors = User.objects.login_validator(request.POST)
-    login = request.POST['Email']
+    login = request.POST['Username']
     password = request.POST['Password']
-    user = User.objects.filter(email=login)
-    request.session['id'] = user[0]. id
     if len(login) < 1 or len(password) < 1:
         messages.error(request,"Fields cannot be empty")
         return redirect('/')
+    else:
+        errors = User.objects.login_validator(request.POST)
+        user = User.objects.filter(username=login)
+        request.session['id'] = user[0].id
     if len(user) < 1:
-        messages.error(request,"Email or password is incorrect")
+        messages.error(request,"Username or password is incorrect")
         return redirect('/')
     else:
         if len(errors):

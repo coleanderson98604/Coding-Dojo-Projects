@@ -33,10 +33,10 @@ def register(request):
         return redirect("/user")
 def show(request):
     errors = User.objects.login_validator(request.POST)
-    login = request.POST['Email']
+    login = request.POST['Username']
     password = request.POST['Password']
     user = User.objects.filter(email=login)
-    request.session['id'] = user[0]. id
+    request.session['id'] = user[0].id
     if len(login) < 1 or len(password) < 1:
         messages.error(request,"Fields cannot be empty")
         return redirect('/')

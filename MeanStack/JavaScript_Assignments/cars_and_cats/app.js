@@ -22,7 +22,7 @@ var server = http.createServer(function (request, response){
         });
     }
     else if(request.url === '/images/gtr.jpg'){
-        fs.readFile('images/gtr.jpg', function (errors, contents){
+        fs.readFile('./images/gtr.jpg', function (errors, contents){
             response.writeHead(200, {'Content-Type': 'image/jpg'});
             response.write(contents); 
             response.end();

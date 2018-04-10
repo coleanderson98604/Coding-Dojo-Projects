@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form class="ui form" action="/result" method="POST">
+        <div class="field">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="field">
+            <label for="list">Dojo Location</label>
+            <select name="list">
+                <option value="Seattle">Seattle</option>
+                <option value="Chicago">Chicago</option>
+                <option value="NewYork">New York</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="favorite">Favorite Language</label>
+            <select name="favorite">
+                <option value="Python">Python</option>
+                <option value="JavaScript">Javascript</option>
+                <option value="C++">C++</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="description">Comment (optional)</label>
+            <textarea name="description" rows="4" cols="50"></textarea>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+</body>
+</html>

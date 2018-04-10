@@ -9,6 +9,14 @@ app.use(session({secret: 'codingdojorocks'}));
 app.set('views', path.join(__dirname, "./views"));
 app.set('view engine', 'ejs');
 
+app.get('/',function(req,res){
+    res.render('index');
+})
+app.post('/result',function(req,res){
+    console.log("POST DATA \n\n", req.body);
+    res.render('results', {Form: req.body })
+})
+
 app.listen(8000, function(){
-    console.log("listening on port 8000")
+    console.log("listening on port 8000");
 })

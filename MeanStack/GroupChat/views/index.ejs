@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var socket = io.connect();
+            if(person == null){
+                var person = prompt("Please enter your name");
+                if (person.length > 0) {
+                    console.log(`${person} has joined the chat`);
+                    socket.emit('new_user', {NewUser: person});
+                }
+                else{
+                    $(location).attr('href', '/')
+                }
+            }
+            $(':button').click(function(){
+                console.log('hello')
+                var message = $('.textbox').val();
+                $('.textbox').val('');
+                socket.emit('newmessage', {messages: message})
+            })
+            socket.on('messages',function(data){
+                if($('#MessageBoard').is(':empty')){
+                    for(message in data.message){
+                        console.log(data.message.length)
+                        $('#MessageBoard').append(`<p>${data.message[message]}</p>`);
+                    }
+                }
+                else {
+                    $('#MessageBoard').append(`<p>${data.message[data.message.length - 1]}</p>`);
+                }
+            })
+            socket.on('alert_user',function(data){
+                alert(`${data.person} has joined the chat`)
+            })
+            return false;
+        });
+    </script>
+</head>
+<body>
+    <h2>Conversation Board</h2>
+    <div id="MessageBoard"></div>
+    <div id="EnterMessage">
+        <textarea class="textbox" value=""></textarea><button>Submit</button>
+    </div>
+</body>
+</html>

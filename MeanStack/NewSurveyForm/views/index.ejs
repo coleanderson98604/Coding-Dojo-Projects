@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var socket = io.connect();
+            $('button').click(function(){
+                var formdata = $('form').serialize();
+                socket.emit('posting_form', {post: formdata });
+                return false
+            });
+            socket.on('response_form', function(data){
+                let form = data.response;
+                let htmlString = "";
+                console.log(form);
+                $('#post_information').show()
+                htmlString = `
+                    <h2>Name: ${form.name}</h2>
+                    <h2>Location: ${form.list}</h2>
+                    <h2>Language: ${form.favorite}</h2>
+                    <h2>Comment: ${form.description}</h2>
+                    <h2>Here is your random server number ${form.random}
+                `
+                $('#post_information').html(htmlString)
+                return false
+            });
+            return false
+        });
+    </script>
+</head>
+<body>
+    <div id = "post_information" style="display: none">
+    </div>
+    <h1>Survey Form</h1>
+    <form class="ui form" action="/" method="POST">
+        <div class="field">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="field">
+            <label for="list">Dojo Location</label>
+            <select name="list">
+                <option value="Seattle">Seattle</option>
+                <option value="Chicago">Chicago</option>
+                <option value="NewYork">New York</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="favorite">Favorite Language</label>
+            <select name="favorite">
+                <option value="Python">Python</option>
+                <option value="JavaScript">Javascript</option>
+                <option value="C++">C++</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="description">Comment (optional)</label>
+            <textarea name="description" rows="4" cols="50"></textarea>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<app-home></app-home>
+<div style="text-align: center">
+    <h1>Buy some coins</h1>
+    <h1>Current coin value: {{ coinValue }}</h1>
+    <form (submit)="buyCoin()">
+        <input type="number" name="Amount" [(ngModel)]="Amount">
+        <input type="submit" value="Buy Coin(s) :)">
+    </form>
+</div>

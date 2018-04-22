@@ -1,0 +1,13 @@
+<nav>
+  <div style="display: inline-block;">
+    <a href="#"><i style="font-size: 200px" class="fab fa-gg"></i></a>
+  </div>
+  <div class="navBar" style="display: inline-block">
+    <a [routerLink]="['home']" class="navBar-brand">Home</a>
+    <a [routerLink]="['mine']" class="navBar-brand">Mine Coins</a>
+    <a [routerLink]="['buy']" class="navBar-brand">Buy Coins</a>
+    <a [routerLink]="['sell']" class="navBar-brand">Sell Coins</a>
+    <a [routerLink]="['ledger']" class="navBar-brand">Browse Ledger</a>
+  </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+<app-home></app-home>
+<div style="text-align: center">
+    <h1>Sell your coins?</h1>
+    <h1>Current coin value: {{ coinValue }}</h1>
+    <form (submit)="Sell()">
+        <input type="number" name="Amount" [(ngModel)]="Amount" />
+        <input type="submit" value="Sell" />
+    </form>
+    <div *ngIf="check">
+        <h4>Farm up some more coins you don't have that much bum</h4>
+    </div>
+</div>

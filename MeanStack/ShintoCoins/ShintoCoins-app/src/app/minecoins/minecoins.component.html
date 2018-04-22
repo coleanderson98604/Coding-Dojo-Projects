@@ -1,0 +1,9 @@
+<app-home></app-home>
+<div style="text-align: center">
+    <h1>Solve this riddle to get your GG coin boi (or m'lady)</h1>
+    <form (submit)="MineCoin()">
+        <p>{{ Question | json }}</p>
+        <h3>What is the answer to life??!?!?!?!</h3>
+        <input type="text" name="Question.answer" [(ngModel)]="Question.answer" /><input type="submit" value="Go answer!" />
+    </form>
+</div>

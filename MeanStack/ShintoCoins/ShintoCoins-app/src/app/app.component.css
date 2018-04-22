@@ -1,0 +1,15 @@
+.fab.fa-gg {
+    color: white;
+}
+h1 {
+    display: inline-block;
+}
+.navBar {
+    padding: 70px;
+    position: absolute;
+}
+a {
+    margin-left: 60px;
+    color: white;
+    font-size: 25px;
+}

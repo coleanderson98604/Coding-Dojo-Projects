@@ -1,0 +1,18 @@
+<app-home></app-home>
+<div style="text-align: center">
+    <h1>Browse the ledger</h1>
+    <h4>Here is all the GG coin transactions</h4>
+    <table style="display: inline-block; text-align: center">
+        <tr>
+            <td>Action</td>
+            <td>Amount</td>
+            <td>Value</td>
+        </tr>
+        <tr *ngFor="let trans of Ledger">
+            <td>{{trans.action}}</td>
+            <td>{{trans.amount}}</td>
+            <td>{{trans.value}}</td>
+            <td><button [routerLink]="['/ledger/' + trans.id]">Details</button></td>
+        </tr>
+    </table>
+</div>

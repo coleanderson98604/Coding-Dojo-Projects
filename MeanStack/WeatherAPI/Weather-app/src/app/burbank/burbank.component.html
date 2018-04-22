@@ -1,0 +1,11 @@
+<div *ngIf="Weather">
+    <h1>{{Weather.name | uppercase }}, {{ Weather.sys.country }}</h1>
+    <h4>Humidity: {{Weather.main.humidity}}</h4>
+    <h4>Temperature (average): {{Weather.main.temp}}</h4>
+    <h4>Temperature (High): {{Weather.main.temp_max}}</h4>
+    <h4>Temperature (Low): {{Weather.main.temp_min}}</h4>
+    <h4>Status: {{Weather.weather[0].description}}</h4>
+    <img src="{{Weather.image}}" width="700px" height="500px">
+  
+  </div>
+  

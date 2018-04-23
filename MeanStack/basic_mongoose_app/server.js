@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
 mongoose.connect('mongodb://localhost/basic_mongoose');
 var UserSchema = new mongoose.Schema({
-    name: { type: String, required: true, minlength: 6},
+    name: { type: String, required: true, minlength: 1},
     age: { type: Number, required: true, min: 1, max: 150}
 },{timestamps: true});
 mongoose.model('User', UserSchema);
@@ -34,7 +34,7 @@ app.post('/users',function(req,res){
         if(err){
             console.log('something went wrong');
             User.find({},function(err,users){
-                res.render('index', {errors: user.errors, users: users})
+                res.render('index', {errors: user.errors, users: users});
             })
         }
         else {

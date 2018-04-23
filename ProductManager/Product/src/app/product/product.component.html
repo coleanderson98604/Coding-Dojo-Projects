@@ -1,0 +1,21 @@
+<div style="text-align: center">
+  <h2>Add your product</h2>
+  <form (submit)="ProductCreation()">
+    <label for="product.title">Product Name:</label>
+    <input type="text" name="product.title" required [(ngModel)]="product.title" minlength="4" maxlength="18" #title="ngModel">
+    <label for="product.price">Product Price:</label>
+    <input type="number" name="product.price" required [(ngModel)]="product.price" #price='ngModel'>
+    <label for="product.imageUrl">Product Image:</label>
+    <input type="text" name="product.imageUrl" required [(ngModel)]="product.imageUrl" minlength="1" #imageUrl='ngModel'>
+    <input type="submit" [disabled]="title.errors" value="Add Product">
+  </form>
+  <div style="text-align: center"  *ngIf="!title.valid ">
+      <h5 *ngIf="!(title.value < 4)">first name must be atleast 4 characters</h5>
+  </div>
+  <div style="text-align: center" *ngIf="price.value < 0">
+    <h5>Price must have postive value</h5>
+  </div>
+  <div style="text-align: center" *ngIf="imageUrl.errors">
+    <h5>Image must have a link</h5>
+  </div>
+</div>

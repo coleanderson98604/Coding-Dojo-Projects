@@ -1,0 +1,8 @@
+<div>
+  <div class="products" *ngFor="let item of product" style="display: inline-block;">
+    <h5>Product Title: {{ item.title }}</h5>
+    <img alt="product" src="{{ item.imageUrl }}" width="300px" height="300px">
+    <h5>Price: {{ item.price }}$</h5>
+    <button [routerLink]="['edit/' + item._id]">Edit</button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<nav class="navBar" style="background: gray!important">
+  <div style="display: inline-block;">
+    <h1>SH<i class="fas fa-eye fa-1x"></i>P</h1>
+  </div>
+  <div class="navBar" style="display: inline-block;">
+    <a [routerLink]="['home']" class="navBar-brand">Home</a>
+    <a [routerLink]="['product-list']" class="navBar-brand">Product List</a>
+    <a [routerLink]="['product-new']" class="navBar-brand">Register Product</a>
+  </div>
+</nav>
+<div style="text-align: center">
+    <h1>Welcome to the SH<i class="fas fa-eye fa-1x"></i>P</h1>
+    <div>
+      <p>Fill your hearts desire by uploading your useless items so that other people can find uses for them</p>
+    </div>
+  </div>
+<router-outlet></router-outlet>

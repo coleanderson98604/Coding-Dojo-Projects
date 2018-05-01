@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/bin/Debug/netcoreapp2.0/Deck_Of_Cards.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/bin/Debug/netcoreapp2.0/Deck_Of_Cards.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/bin/Debug/netcoreapp2.0/Deck_Of_Cards.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/bin/Debug/netcoreapp2.0/Deck_Of_Cards.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/bin/Debug/netcoreapp2.0/Deck_Of_Cards.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/obj/Debug/netcoreapp2.0/Deck_Of_Cards.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/obj/Debug/netcoreapp2.0/Deck_Of_Cards.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/obj/Debug/netcoreapp2.0/Deck_Of_Cards.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/obj/Debug/netcoreapp2.0/Deck_Of_Cards.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Deck_Of_Cards/obj/Debug/netcoreapp2.0/Deck_Of_Cards.pdb

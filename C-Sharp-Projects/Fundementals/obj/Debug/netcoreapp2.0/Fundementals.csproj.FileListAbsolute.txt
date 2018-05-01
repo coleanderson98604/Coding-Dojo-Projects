@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/bin/Debug/netcoreapp2.0/Fundementals.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/bin/Debug/netcoreapp2.0/Fundementals.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/bin/Debug/netcoreapp2.0/Fundementals.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/bin/Debug/netcoreapp2.0/Fundementals.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/bin/Debug/netcoreapp2.0/Fundementals.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/obj/Debug/netcoreapp2.0/Fundementals.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/obj/Debug/netcoreapp2.0/Fundementals.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/obj/Debug/netcoreapp2.0/Fundementals.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/obj/Debug/netcoreapp2.0/Fundementals.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Fundementals/obj/Debug/netcoreapp2.0/Fundementals.pdb

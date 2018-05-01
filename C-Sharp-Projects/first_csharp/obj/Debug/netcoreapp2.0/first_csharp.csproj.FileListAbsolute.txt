@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/bin/Debug/netcoreapp2.0/first_csharp.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/bin/Debug/netcoreapp2.0/first_csharp.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/bin/Debug/netcoreapp2.0/first_csharp.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/bin/Debug/netcoreapp2.0/first_csharp.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/bin/Debug/netcoreapp2.0/first_csharp.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/obj/Debug/netcoreapp2.0/first_csharp.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/obj/Debug/netcoreapp2.0/first_csharp.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/obj/Debug/netcoreapp2.0/first_csharp.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/obj/Debug/netcoreapp2.0/first_csharp.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/first_csharp/obj/Debug/netcoreapp2.0/first_csharp.pdb

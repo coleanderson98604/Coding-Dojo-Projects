@@ -7,9 +7,9 @@ namespace Puzzles
     {
         static void Main(string[] args)
         {
-            // RandomArray();
-            // Console.WriteLine(TossCoin());
-            // Console.WriteLine($"{TossMultiCoin(32)}%");
+            RandomArray();
+            Console.WriteLine(TossCoin());
+            Console.WriteLine($"{TossMultiCoin(32)}%");
             string[] test = Names();
             for(int i = 0; i < test.Length; i++){
                 Console.WriteLine(test[i]);

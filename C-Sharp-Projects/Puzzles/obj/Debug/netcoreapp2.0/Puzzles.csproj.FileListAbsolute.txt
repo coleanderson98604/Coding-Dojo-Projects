@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/bin/Debug/netcoreapp2.0/Puzzles.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/bin/Debug/netcoreapp2.0/Puzzles.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/bin/Debug/netcoreapp2.0/Puzzles.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/bin/Debug/netcoreapp2.0/Puzzles.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/bin/Debug/netcoreapp2.0/Puzzles.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/obj/Debug/netcoreapp2.0/Puzzles.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/obj/Debug/netcoreapp2.0/Puzzles.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/obj/Debug/netcoreapp2.0/Puzzles.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/obj/Debug/netcoreapp2.0/Puzzles.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Puzzles/obj/Debug/netcoreapp2.0/Puzzles.pdb

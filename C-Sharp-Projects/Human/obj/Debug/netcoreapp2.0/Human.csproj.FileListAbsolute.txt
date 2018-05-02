@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/bin/Debug/netcoreapp2.0/Human.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/bin/Debug/netcoreapp2.0/Human.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/bin/Debug/netcoreapp2.0/Human.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/bin/Debug/netcoreapp2.0/Human.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/bin/Debug/netcoreapp2.0/Human.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/obj/Debug/netcoreapp2.0/Human.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/obj/Debug/netcoreapp2.0/Human.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/obj/Debug/netcoreapp2.0/Human.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/obj/Debug/netcoreapp2.0/Human.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/Human/obj/Debug/netcoreapp2.0/Human.pdb

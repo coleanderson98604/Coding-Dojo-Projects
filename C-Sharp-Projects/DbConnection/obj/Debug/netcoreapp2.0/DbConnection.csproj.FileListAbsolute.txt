@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/obj/Debug/netcoreapp2.0/DbConnection.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/obj/Debug/netcoreapp2.0/DbConnection.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/obj/Debug/netcoreapp2.0/DbConnection.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/bin/Debug/netcoreapp2.0/DbConnection.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/bin/Debug/netcoreapp2.0/DbConnection.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/bin/Debug/netcoreapp2.0/DbConnection.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/bin/Debug/netcoreapp2.0/DbConnection.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/bin/Debug/netcoreapp2.0/DbConnection.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/obj/Debug/netcoreapp2.0/DbConnection.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DbConnection/obj/Debug/netcoreapp2.0/DbConnection.pdb

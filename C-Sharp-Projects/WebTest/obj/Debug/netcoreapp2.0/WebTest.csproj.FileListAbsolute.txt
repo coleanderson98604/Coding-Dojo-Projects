@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/bin/Debug/netcoreapp2.0/WebTest.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/bin/Debug/netcoreapp2.0/WebTest.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/bin/Debug/netcoreapp2.0/WebTest.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/bin/Debug/netcoreapp2.0/WebTest.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/bin/Debug/netcoreapp2.0/WebTest.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/obj/Debug/netcoreapp2.0/WebTest.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/obj/Debug/netcoreapp2.0/WebTest.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/obj/Debug/netcoreapp2.0/WebTest.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/obj/Debug/netcoreapp2.0/WebTest.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/WebTest/obj/Debug/netcoreapp2.0/WebTest.pdb

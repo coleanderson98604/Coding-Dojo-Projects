@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/bin/Debug/netcoreapp2.0/CallingCard.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/bin/Debug/netcoreapp2.0/CallingCard.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/bin/Debug/netcoreapp2.0/CallingCard.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/bin/Debug/netcoreapp2.0/CallingCard.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/bin/Debug/netcoreapp2.0/CallingCard.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/obj/Debug/netcoreapp2.0/CallingCard.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/obj/Debug/netcoreapp2.0/CallingCard.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/obj/Debug/netcoreapp2.0/CallingCard.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/obj/Debug/netcoreapp2.0/CallingCard.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/CallingCard/obj/Debug/netcoreapp2.0/CallingCard.pdb

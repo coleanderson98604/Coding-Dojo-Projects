@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/bin/Debug/netcoreapp2.0/portfollio.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/bin/Debug/netcoreapp2.0/portfollio.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/bin/Debug/netcoreapp2.0/portfollio.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/bin/Debug/netcoreapp2.0/portfollio.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/bin/Debug/netcoreapp2.0/portfollio.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/obj/Debug/netcoreapp2.0/portfollio.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/obj/Debug/netcoreapp2.0/portfollio.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/obj/Debug/netcoreapp2.0/portfollio.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/obj/Debug/netcoreapp2.0/portfollio.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/portfollio/obj/Debug/netcoreapp2.0/portfollio.pdb

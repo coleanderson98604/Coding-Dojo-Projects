@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/obj/Debug/netcoreapp2.0/TimeDisplay.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/obj/Debug/netcoreapp2.0/TimeDisplay.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/obj/Debug/netcoreapp2.0/TimeDisplay.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/bin/Debug/netcoreapp2.0/TimeDisplay.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/bin/Debug/netcoreapp2.0/TimeDisplay.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/bin/Debug/netcoreapp2.0/TimeDisplay.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/bin/Debug/netcoreapp2.0/TimeDisplay.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/bin/Debug/netcoreapp2.0/TimeDisplay.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/obj/Debug/netcoreapp2.0/TimeDisplay.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/TimeDisplay/obj/Debug/netcoreapp2.0/TimeDisplay.pdb

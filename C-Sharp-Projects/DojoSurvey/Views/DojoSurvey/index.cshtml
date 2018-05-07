@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script>
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div style="text-align:center;">
+        <div class="row">
+        <form class="col s12 m12" action="info" method="POST">
+            <div class="row">
+            <div class="input-field col s6">
+                <input name="name" type="text" class="validate">
+                <label for="first_name">Your Name</label>
+            </div>
+            <div class="input-field col s12 m8">
+                <select name="location">
+                <option value="San Jose">San Jose</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Chicago">Chicago</option>
+                </select>
+            <label>Dojo Location</label>
+            </div>
+            <div class="input-field col s12 m8">
+                <select name="language">
+                <option value="Python">Python</option>
+                <option value="C#">C #</option>
+                <option value="Javascript">Javascript</option>
+                </select>
+            <label>Favorite Language</label>
+            </div>
+            <div class="row">
+            <div class="input-field col s12 m8">
+            <textarea name="comment" class="materialize-textarea"></textarea>
+            <label for="textarea1">Comment (optional) </label>
+            <button class="btn waves-effect waves-light" type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

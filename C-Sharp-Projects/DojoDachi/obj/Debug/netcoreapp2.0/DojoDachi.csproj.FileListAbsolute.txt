@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/obj/Debug/netcoreapp2.0/DojoDachi.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/obj/Debug/netcoreapp2.0/DojoDachi.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/obj/Debug/netcoreapp2.0/DojoDachi.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/bin/Debug/netcoreapp2.0/DojoDachi.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/bin/Debug/netcoreapp2.0/DojoDachi.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/bin/Debug/netcoreapp2.0/DojoDachi.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/bin/Debug/netcoreapp2.0/DojoDachi.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/bin/Debug/netcoreapp2.0/DojoDachi.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/obj/Debug/netcoreapp2.0/DojoDachi.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoDachi/obj/Debug/netcoreapp2.0/DojoDachi.pdb

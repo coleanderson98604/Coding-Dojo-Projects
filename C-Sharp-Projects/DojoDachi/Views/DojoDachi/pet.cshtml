@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        $(Document).ready(function(){
+        });
+    </script>
+</head>
+<body>
+    <div style="text-align:center">
+        <p>Name: @ViewBag.Name</p>
+        <p>Fullness: @ViewBag.Fullness</p>
+        <p>Happiness: @ViewBag.Happiness</p>
+        <p>Meals: @ViewBag.Meals</p>
+        <p>Energy: @ViewBag.Energy</p>
+        <p>@ViewBag.Status </p>
+        @{
+            @if(@ViewBag.Status != "Dead" && @ViewBag.Status != "You have won!")
+            {
+                <form action="Feed" method="POST">
+                    <input type="submit" value="Feed">
+                </form>
+                <form action="Play" method="POST">
+                    <input type="submit" value="Play">
+                </form>
+                <form action="Work" method="POST">
+                    <input type="submit" value="Work">
+                </form>
+                <form action="Sleep" method="POST">
+                    <input type="submit" value="Sleep">
+                </form>
+            }
+            else
+            {
+                <form action="Restart" method="POST">
+                    <input type="submit" value="Restart">
+                </form>
+            }
+        }
+    </div>
+</body>
+</html>

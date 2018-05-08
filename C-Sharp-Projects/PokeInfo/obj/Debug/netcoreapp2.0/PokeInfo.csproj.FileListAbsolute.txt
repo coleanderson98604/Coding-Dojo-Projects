@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/bin/Debug/netcoreapp2.0/PokeInfo.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/bin/Debug/netcoreapp2.0/PokeInfo.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/bin/Debug/netcoreapp2.0/PokeInfo.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/bin/Debug/netcoreapp2.0/PokeInfo.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/bin/Debug/netcoreapp2.0/PokeInfo.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/obj/Debug/netcoreapp2.0/PokeInfo.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/obj/Debug/netcoreapp2.0/PokeInfo.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/obj/Debug/netcoreapp2.0/PokeInfo.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/obj/Debug/netcoreapp2.0/PokeInfo.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/PokeInfo/obj/Debug/netcoreapp2.0/PokeInfo.pdb

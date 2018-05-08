@@ -26,6 +26,7 @@ namespace RandomController.Controllers
             HttpContext.Session.SetInt32("count", (int)count);
             ViewBag.Count = count;
             ViewBag.RandomString = generate;
+
             return View();
         }
 

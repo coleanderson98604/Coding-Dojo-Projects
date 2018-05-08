@@ -1,0 +1,25 @@
+@{
+
+}
+<div style="text-align:center;">
+    <h1>Here is Data on @ViewBag.PokeInfo["name"]</h1>
+    <img src="@ViewBag.PokeInfo["sprites"]["back_shiny"]" width="50%" height="50%">
+    <ul>
+        <h2>Primary Type</h2>
+        @{
+            @for(int i = 0; i < @ViewBag.PokeInfo["types"].Count; i++){
+                @if(i == 0){
+                    <li>@ViewBag.PokeInfo["types"][i]["type"]["name"]</li>
+                }
+                else
+                {
+                    <li>@ViewBag.PokeInfo["types"][i]["type"]["name"]</li>
+                }
+            }
+        }
+        <h2>Height</h2>
+        <li>@ViewBag.PokeInfo["height"]</li>
+        <h2>Weight</h2>
+        <li>@ViewBag.PokeInfo["weight"]</li>
+    </ul>
+</div>

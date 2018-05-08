@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - QuotingDojo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/materialize/css/materialize.css" />
+    <script src="~/materialize/js/materialize.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+    <script type="text/javascript" src="~/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input#input_text, textarea#textarea2').characterCounter();
+        });
+    </script>
+</head>
+<body>
+    <nav>
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo center">Quoting Dojo</a>
+    </div>
+    </nav>
+    <div class="body">
+        <!-- Your View will be rendered in place of RenderBody -->
+        @RenderBody()
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

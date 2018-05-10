@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/materialize/css/materialize.css" />
+    <script src="~/materialize/js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.get("results", function(response){
+                let htmlString = "";
+                for(var i = response.length - 1; i >= 0; i--){
+                    htmlString += `<h4>${response[i]["titles"]} Rating: ${response[i]["votes"]} Released: ${response[i]["dates"]}</h4>`
+                }
+                $(".results").html(htmlString);
+            })
+        })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <form action="movies" method="POST">
+            <input type="text" name="query">
+            <label for="query">Movie Title</label>
+            <input type="submit">
+            @ViewBag.result
+        </form>
+    </div>
+    <div class="results">
+
+    </div>
+</body>
+</html>

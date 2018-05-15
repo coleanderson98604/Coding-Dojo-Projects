@@ -3,7 +3,7 @@ using System.Data;
 using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
  
-namespace MovieAPI
+namespace LogAndReg
 {
     public class DbConnector
     {

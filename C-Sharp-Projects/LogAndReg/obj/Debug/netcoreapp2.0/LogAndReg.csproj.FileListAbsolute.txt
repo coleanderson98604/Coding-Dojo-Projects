@@ -1,0 +1,11 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/bin/Debug/netcoreapp2.0/LogAndReg.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/bin/Debug/netcoreapp2.0/LogAndReg.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/bin/Debug/netcoreapp2.0/LogAndReg.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/bin/Debug/netcoreapp2.0/LogAndReg.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/bin/Debug/netcoreapp2.0/LogAndReg.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/obj/Debug/netcoreapp2.0/LogAndReg.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/obj/Debug/netcoreapp2.0/LogAndReg.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/obj/Debug/netcoreapp2.0/LogAndReg.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/obj/Debug/netcoreapp2.0/LogAndReg.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/obj/Debug/netcoreapp2.0/LogAndReg.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/LogAndReg/obj/Debug/netcoreapp2.0/LogAndReg.csprojResolveAssemblyReference.cache

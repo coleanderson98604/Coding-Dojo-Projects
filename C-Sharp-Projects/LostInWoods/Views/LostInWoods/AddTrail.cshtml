@@ -1,0 +1,47 @@
+@model LostInWoods.Models.RegisterViewModel
+<div class="row">
+    <h6 class="col s2">Add A New Trail</h6>
+    <a class="col s2 offset-s8" href="/">Go Back Home</a>
+</div>
+<div class="row">
+    <form class="col s12" asp-controller="LostInWoods" asp-action="Create" method="POST">
+        <div class="row">
+            <div class="input-field col s12">
+                <input asp-for="TrailName"/>
+                <label asp-for="TrailName">Trail</label>
+                <span asp-validation-for="TrailName"></span>
+            </div>
+            <div class="input-field col s12">
+                <textarea asp-for="Description" class="materialize-textarea"></textarea>
+                <label asp-for="Description">Description</label>
+                <span asp-validation-for="Description"></span>
+            </div>
+            <div class="input-field col s12">
+                <input asp-for="TrailLength"/>
+                <label asp-for="TrailLength">Trail Length</label>
+                <span asp-validation-for="TrailLength"></span>
+            </div>
+            <div class="input-field col s12">
+                <input asp-for="Elevation"/>
+                <label asp-for="Elevation">Elevation Change</label>
+                <span asp-validation-for="Elevation"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="Log"/>
+                <label asp-for="Log">Longitude</label>
+                <span asp-validation-for="Log"></span>
+            </div>
+            <div class="input-field col s6">
+                <input asp-for="Lat"/>
+                <label asp-for="Lat">Latitude</label>
+                <span asp-validation-for="Lat"></span>
+            </div>
+            <div class="col s6">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+

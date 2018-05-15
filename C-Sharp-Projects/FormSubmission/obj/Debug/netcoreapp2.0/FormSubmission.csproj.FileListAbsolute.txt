@@ -1,0 +1,10 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/bin/Debug/netcoreapp2.0/FormSubmission.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/bin/Debug/netcoreapp2.0/FormSubmission.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/bin/Debug/netcoreapp2.0/FormSubmission.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/bin/Debug/netcoreapp2.0/FormSubmission.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/bin/Debug/netcoreapp2.0/FormSubmission.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/obj/Debug/netcoreapp2.0/FormSubmission.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/obj/Debug/netcoreapp2.0/FormSubmission.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/obj/Debug/netcoreapp2.0/FormSubmission.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/obj/Debug/netcoreapp2.0/FormSubmission.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/FormSubmission/obj/Debug/netcoreapp2.0/FormSubmission.pdb

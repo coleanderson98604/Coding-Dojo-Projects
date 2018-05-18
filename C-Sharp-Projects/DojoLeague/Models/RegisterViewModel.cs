@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using DojoLeague.Models;
 
-namespace LostInWoods.Models
+namespace DojoLeague.Models
 {
     public class RegisterViewDojo : BaseEntity
     {
@@ -17,19 +17,20 @@ namespace LostInWoods.Models
         public string Information {get; set;}
 
     }
-        public class RegisterViewNinja : BaseEntity
+    public class RegisterViewNinja : BaseEntity
     {
         [Required]
         [MinLength(3)]
-        public string Name {get; set;}
+        public string name {get; set;}
 
         [Required]
         [Range(1,10)]
-        public int Level {get; set;}
+        public int level {get; set;}
 
         [MinLength(10)]
         public string Description {get; set;}
 
+        public int Dojo_id {get; set;}
     }
 
 

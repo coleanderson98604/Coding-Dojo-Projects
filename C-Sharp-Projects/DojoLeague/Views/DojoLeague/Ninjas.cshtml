@@ -1,0 +1,68 @@
+@model DojoLeague.Models.RegisterViewNinja
+
+<div class="row">
+    <div class="col s6">
+        <h1>Registered Ninjas</h1>
+        <table>
+            <tr>
+                <td>Ninja Name</td>
+                <td>Home Dojo</td>
+            </tr>
+            @{
+                @foreach(var person in @ViewBag.Ninjas)
+                {
+                    <tr>
+                        <td><a href="/Ninjas/@person.id">@person.name</a></td>
+                        <td>@person.dojo.Name</td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+    <div class="col s6">
+        <h1>Register A Ninja</h1>
+        <form asp-controller="DojoLeague" asp-action="AddNinja" method="POST">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input asp-for="name"/>
+                    <label asp-for="name">Ninja Name</label>
+                    <span asp-validation-for="name"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input type="number" step="1.0" asp-for="level"/>
+                    <label asp-for="level">Level</label>
+                    <span asp-validation-for="level"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    @{
+                        <select asp-for="Dojo_id">
+                                <option value="" disabled selected>Choose your option</option>
+                                @foreach (var dojo in @ViewBag.Dojos)
+                                {
+                                    <option value="@dojo.id">@dojo.Name</option>
+                                }
+                            
+                        </select>
+                    }                    
+                    <label asp-for="Dojo_id">Assigned Dojo?</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea asp-for="Description" class="materialize-textarea"></textarea>
+                    <label asp-for="Description">Optional Description</label>
+                    <span asp-validation-for="Description"></span>
+                </div>
+            </div>
+            <div class="col s6">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

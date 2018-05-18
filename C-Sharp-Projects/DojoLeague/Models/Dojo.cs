@@ -10,10 +10,10 @@ namespace DojoLeague.Models{
 	{
 		ninjas = new List<Ninja>();
 	}
-
+	public int id {get; set;}
 	public string Name {get; set;}
 	public string Location {get; set;}
-	public string Infromation {get;set;}
+	public string Information {get;set;}
 
 	public ICollection<Ninja> ninjas {get; set;}
 	

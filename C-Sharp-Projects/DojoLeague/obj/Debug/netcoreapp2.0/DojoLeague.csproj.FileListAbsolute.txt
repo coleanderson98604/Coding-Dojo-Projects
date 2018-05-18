@@ -1,0 +1,11 @@
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/obj/Debug/netcoreapp2.0/DojoLeague.csprojResolveAssemblyReference.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/obj/Debug/netcoreapp2.0/DojoLeague.csproj.CoreCompileInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/obj/Debug/netcoreapp2.0/DojoLeague.AssemblyInfoInputs.cache
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/obj/Debug/netcoreapp2.0/DojoLeague.AssemblyInfo.cs
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/bin/Debug/netcoreapp2.0/DojoLeague.deps.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/bin/Debug/netcoreapp2.0/DojoLeague.runtimeconfig.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/bin/Debug/netcoreapp2.0/DojoLeague.runtimeconfig.dev.json
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/bin/Debug/netcoreapp2.0/DojoLeague.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/bin/Debug/netcoreapp2.0/DojoLeague.pdb
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/obj/Debug/netcoreapp2.0/DojoLeague.dll
+/Users/Cole/Documents/Coding_Dojo_Assignments/C-Sharp-Projects/DojoLeague/obj/Debug/netcoreapp2.0/DojoLeague.pdb

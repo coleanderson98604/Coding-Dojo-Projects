@@ -1,0 +1,41 @@
+<h1>@ViewBag.SingleDojo.Name</h1>
+<h2>Dojo locatoin - @ViewBag.SingleDojo.Location</h2>
+<h2>Information - @ViewBag.SingleDojo.Information</h2>
+<div class="row">
+    <div class="col s6">
+        <h4>Current members</h4>
+        <table>
+            <th>
+                <td>Ninja</td>
+                <td>Action</td>
+            </th>
+            @{
+                @foreach (var person in @ViewBag.SingleDojo.ninjas)
+                {
+                    <tr>
+                        <td><a href="/Ninjas/@person.id"> @person.name </a></td>
+                        <td><a href="/Dojo/@ViewBag.id/banish/@person.id">Banish</a></td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+    <div class="col s6">
+        <h4>Rouge Ninjas</h4>
+        <table>
+            <th>
+                <td>Ninja</td>
+                <td>Action</td>
+            </th>
+            @{
+                @foreach (var rouge in @ViewBag.RougeDojo.ninjas)
+                {
+                    <tr>
+                        <td><a href="/Ninjas/@rouge.id">@rouge.name</a></td>
+                        <td><a href="/Dojo/@ViewBag.id/recruit/@rouge.id">Recruit</a></td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

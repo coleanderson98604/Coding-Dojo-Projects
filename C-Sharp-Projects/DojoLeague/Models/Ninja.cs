@@ -5,12 +5,12 @@ namespace DojoLeague.Models{
 
 	public class Ninja : BaseEntity{
 
-
-	public string Name {get; set;}
-	public int Level {get; set;}
-    public int Dojo {get;set;}
+	public int id {get;set;}
+	public string name {get; set;}
+	public int level {get; set;}
 	public string Description {get;set;}
 
+	public int? Dojo_id {get; set;}
     public Dojo dojo {get;set;}
 	
 /*

@@ -8,12 +8,12 @@ using DojoLeague.Factory;
 
 namespace DojoLeague.Factory
 {
-    public class DojoLeagueFactory : IFactory<Dojo>
+    public class DojoFactory : IFactory<Dojo>
     {
         
         
         private string connectionString;
-        public DojoLeagueFactory()
+        public DojoFactory()
         {
             connectionString = "server=localhost;userid=root;password=root;port=3306;database=TrailDB;SslMode=None";
         }
@@ -27,7 +27,7 @@ namespace DojoLeague.Factory
         public void Add(Dojo item)
         {
             using (IDbConnection dbConnection = Connection) {
-                string query =  "INSERT INTO Dojos (Name, Level, Dojo, Description) VALUES (Name, Level, Dojo, Description)";
+                string query =  "INSERT INTO Dojos (Name, Location, Information) VALUES (@Name, @Location, @Information)";
                 dbConnection.Open();
                 dbConnection.Execute(query, item);
             }
@@ -48,7 +48,7 @@ namespace DojoLeague.Factory
                 return dbConnection.Query<Dojo>("SELECT * FROM Dojos WHERE id = @Id", new { Id = id }).FirstOrDefault();
             }
         }
-        public Dojo PlayerFindById(long id)
+        public Dojo DojoFindById(int id)
         {
         using (IDbConnection dbConnection = Connection)
         {
@@ -56,16 +56,16 @@ namespace DojoLeague.Factory
             var query =
             @"
             SELECT * FROM Dojos WHERE id = @Id;
-            SELECT * FROM players WHERE Dojos = @Id;
+            SELECT * FROM Ninjas WHERE Dojo_id = @Id;
             ";
 
             using (var multi = dbConnection.QueryMultiple(query, new {Id = id}))
             {
-                var Dojo = multi.Read<Dojo>().Single();
-                // Dojo.players = multi.Read<Ninja>().ToList();
-                return Dojo;
+                var dojo = multi.Read<Dojo>().Single();
+                dojo.ninjas = multi.Read<Ninja>().ToList();
+                return dojo;
             }
         }
-}
+        }
     }
 }

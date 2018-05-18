@@ -1,0 +1,12 @@
+@foreach(var wedding in @ViewBag.Wedding)
+{
+    <h1>@wedding.PersonOne and @wedding.PersonTwo Wedding</h1>
+    <h4>Date: @wedding.Date.ToString("MMM dd, yyyy")</h4>
+    <h4>Address: @wedding.Address </h4>
+    <h4>Guests:</h4>
+    @foreach(var person in wedding.users)
+    {
+        <p>@person.user.fName @person.user.lName</p>
+    }
+}
+<a href="/dashboard" class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Dashboard</a>
